@@ -1,0 +1,402 @@
+    <!DOCTYPE HTML>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>The Personal Location Experiment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel='stylesheet' id='prettyphoto-css'  href="css/prettyPhoto.css" type='text/css' media='all'>
+    <link href="css/fontello.css" type="text/css" rel="stylesheet">
+    <!--[if lt IE 7]>
+            <link href="css/fontello-ie7.css" type="text/css" rel="stylesheet">  
+        <![endif]-->
+    <!-- Google Web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.bmp">
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Load ScrollTo -->
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <!-- Load LocalScroll -->
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <!-- prettyPhoto Initialization -->
+    <script type="text/javascript" charset="utf-8">
+          $(document).ready(function(){
+            $("a[rel^='prettyPhoto']").prettyPhoto();
+          });
+        </script>
+    <!-- Line Chart -->
+<script type="text/javascript">
+	window.onload = function () {
+		var chart = new CanvasJS.Chart("chartContainer",
+		{
+
+			title:{
+				text: "Dummy Apartment Building Costs",
+				fontSize: 20
+			},
+			axisX:{
+
+				gridColor: "Silver",
+				tickColor: "silver",
+				valueFormatString: "YYYY"
+
+			},                        
+                        toolTip:{
+                          shared:true
+                        },
+			theme: "theme4",
+			axisY: {
+				gridColor: "Silver",
+				tickColor: "silver"
+			},
+			legend:{
+				verticalAlign: "center",
+				horizontalAlign: "right"
+			},
+			data: [
+			{        
+				type: "line",
+				showInLegend: true,
+				lineThickness: 2,
+				name: "Apt: 1",
+				markerType: "square",
+				color: "rgb(0,161,222)",
+				dataPoints: [
+				{ x: new Date(2004,01,01), y: 650232 },
+				{ x: new Date(2005,01,01), y: 700465 },
+				{ x: new Date(2006,01,01), y: 710398 },
+				{ x: new Date(2007,01,01), y: 658459 },
+				{ x: new Date(2008,01,01), y: 634456 },
+				{ x: new Date(2009,01,01), y: 623963 },
+				{ x: new Date(2010,01,01), y: 601847 },
+				{ x: new Date(2011,01,01), y: 620853 },
+				{ x: new Date(2012,01,01), y: 659869 },
+				{ x: new Date(2013,01,01), y: 669943 },
+				{ x: new Date(2014,01,01), y: 680970 }
+				]
+			},
+			{        
+				type: "line",
+				showInLegend: true,
+				lineThickness: 2,
+				name: "Apt: 2",
+				markerType: "triangle",
+				color: "rgb(114,199,231)",
+				dataPoints: [
+				{ x: new Date(2004,01,01), y: 530232 },
+				{ x: new Date(2005,01,01), y: 500465 },
+				{ x: new Date(2006,01,01), y: 510398 },
+				{ x: new Date(2007,01,01), y: 538459 },
+				{ x: new Date(2008,01,01), y: 520456 },
+				{ x: new Date(2009,01,01), y: 513063 },
+				{ x: new Date(2010,01,01), y: 501847 },
+				{ x: new Date(2011,01,01), y: 530853 },
+				{ x: new Date(2012,01,01), y: 559869 },
+				{ x: new Date(2013,01,01), y: 539943 },
+				{ x: new Date(2014,01,01), y: 520970 }
+				]
+			},
+			{        
+				type: "line",
+				showInLegend: true,
+				lineThickness: 2,
+				name: "Apt: 3",
+				markerType: "cross",
+				color: "rgb(82,208,255)",
+				dataPoints: [
+				{ x: new Date(2004,01,01), y: 500202 },
+				{ x: new Date(2005,01,01), y: 510465 },
+				{ x: new Date(2006,01,01), y: 520398 },
+				{ x: new Date(2007,01,01), y: 548459 },
+				{ x: new Date(2008,01,01), y: 560456 },
+				{ x: new Date(2009,01,01), y: 543063 },
+				{ x: new Date(2010,01,01), y: 581847 },
+				{ x: new Date(2011,01,01), y: 500853 },
+				{ x: new Date(2012,01,01), y: 509869 },
+				{ x: new Date(2013,01,01), y: 519943 },
+				{ x: new Date(2014,01,01), y: 530970 }
+				]
+			},
+			{        
+				type: "line",
+				showInLegend: true,
+				name: "Apt: 4",
+				color: "#20B2AA",
+				lineThickness: 2,
+
+				dataPoints: [
+				{ x: new Date(2004,01,01), y: 520510 },
+				{ x: new Date(2005,01,01), y: 540560 },
+				{ x: new Date(2006,01,01), y: 555540 },
+				{ x: new Date(2007,01,01), y: 581558 },
+				{ x: new Date(2008,01,01), y: 591544 },
+				{ x: new Date(2009,01,01), y: 570693 },
+				{ x: new Date(2010,01,01), y: 560657 },
+				{ x: new Date(2011,01,01), y: 583663 },
+				{ x: new Date(2012,01,01), y: 592639 },
+				{ x: new Date(2013,01,01), y: 600673 },
+				{ x: new Date(2014,01,01), y: 610660 }
+				]
+			}
+
+			
+			],
+          legend:{
+            cursor:"pointer",
+            itemclick:function(e){
+              if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+              	e.dataSeries.visible = false;
+              }
+              else{
+                e.dataSeries.visible = true;
+              }
+              chart.render();
+            }
+          }
+		});
+
+chart.render();
+}
+</script>
+    
+    <script type="text/javascript" src="js/canvasjs.min.js"</script>
+    </script>
+    <!-- Line Chart -->
+    </head>
+    <body>
+    <!--******************** NAVBAR ********************-->
+    <div class="navbar-wrapper">
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+            <h1 class="brand"><a href="#top">The Geospatial Practice</a></h1>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <nav class="pull-right nav-collapse collapse">
+              <ul id="menu-main" class="nav">
+                <li><a title="services" href="#services">The Idea</a></li>
+                <li><a title="results" href="#results">The Results</a></li>
+                <li><a title="news" href="#news">News</a></li>
+                <li><a title="team" href="#team">Team</a></li>
+                <li><a title="contact" href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.navbar-inner -->
+      </div>
+      <!-- /.navbar -->
+    </div>
+    <!-- /.navbar-wrapper -->
+    <div id="top"></div>
+    <!-- ******************** HeaderWrap ********************-->
+    <div id="headerwrap">
+      <header class="clearfix">
+        <h1>THE <span>LOCATION</span> EXPERIMENT:<br><span> what</span> my location <span>says</span> about <span>me</span></h1>
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+<!--
+              <input type="text" name="your-email" placeholder="you@yourmail.com" class="cform-text" size="40" title="your email">
+              <input type="submit" value="Notify me" class="cform-submit">
+-->
+            </div>
+          </div>
+      </header>
+    </div>
+    <!--******************** Feature ********************-->
+    <div class="scrollblock">
+      <section id="feature">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <article>
+                <p><span>Today's technologies allow you to collect geo-referenced data - but what are we doing with that information?</span></p>
+              </article>
+            </div>
+            <!-- ./span12 -->
+          </div>
+          <!-- .row -->
+        </div>
+        <!-- ./container -->
+      </section>
+    </div>
+    <hr>
+    <!--******************** The Results Section ********************-->
+    <section id="results" class="single-page scrollblock">
+      <div class="container">
+            <div class="featurette">
+              <h2 class="featurette-heading">So what's the idea?<span class="muted">| why should I care</span></h2>
+            <p>Through the ubiquity of smartphones, an enormous quantity of location data is available in the United States. With these data, much can be guessed about a person based on where they go, how often they go there, and how long they stay. This experiment explores how much I could learn about myself using only my location data as tracked by google.</p>
+            <p>Collecting my personal location data was so easy it was scary. Turns out, my locations are being tracked by google. If you want to see if you're being tracked, check out <a href="http://www.google.com/locationhistory">Google's Location History website</a>. It allows you to export up to 30 days of location history in a kml file. After I collected 30 days of location data, I challenged myself to guess a few things about...myself.</p>
+<p>I started with the basics: where do I work and where do I sleep. But that was easy. I wanted to see how far I could take it, so I started asking questions like: how much money am I probably making? What's my likely ethnicity? What is my favorite type of drink? I wanted to see how personal I could get.
+</p>
+            </div>
+        <div class="row">
+          <div class="span12">
+            <div class="inside">
+              <hgroup>
+                <h2>Where in the world?</h2>
+              </hgroup>
+            <div class="mask2"> <a href="img/map_images/where_in_the_world.png" rel="prettyPhoto"><img src="img/map_images/where_in_the_world.png" alt=""></a> </div>
+                <a class="more-link" href="img/map_images/where_in_the_world.png">view map</a> </div>
+              <div class="entry-content">
+                <p>Starting simply, it's clear that the target (me) is located in the United States. A simple point density analysis shows that I am most often found in Washington DC, with a few exceptions that include: New York City, Rochester NY, and Dallas TX. I wonder what's up with that.</p>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+          <div class="span12">
+            <div class="inside">
+              <hgroup>
+                <h2>Where do I work?</h2>
+              </hgroup>
+            <div class="mask2"> <a href="img/map_images/working_hours.png" rel="prettyPhoto"><img src="img/map_images/working_hours.png" alt=""></a> </div>
+                <a class="more-link" href="img/map_images/working_hours.png">view map</a> </div>
+              <div class="entry-content">
+                <p>To figure out where I work, I focused in on DC, and looked for my locations during normal business hours (excluding holidays - which in this case included Thanksgiving and the Friday after, Christmas Day, New Year's Eve and New Year's day, and Martin Luther King day). Using point density analysis, I was able to determine that during the working day I can be found in one of these 3 areas. We could narrow this down significantly but I'm keeping things relatively generalized to not give exact personal details away. These three areas are very distinct in their composition. The northern-most point is a residential area that has several service-orientated sectors nearby. The eastern-most area focuses on a governmental department building, while the western-most area focuses on a building occupied by Deloitte LLP and CEB advisory. So, this character potentially works for a consulting firm that supports a federal department.</p>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+          <div class="span12">
+            <div class="inside">
+              <hgroup>
+                <h2>Where do I live?</h2>
+              </hgroup>
+            <div class="mask2"> <a href="img/map_images/live.png" rel="prettyPhoto"><img src="img/map_images/live.png" alt=""></a> </div>
+                <a class="more-link" href="img/map_images/live.png">view map</a> </div>
+              <div class="entry-content">
+                <p>Looking at non-business hours, it was very clear where I live. In fact, if I wasn't generalizing things, you could make an educated guess as to my apartment number, or an exact guess if I threw in elevation data. Also, from these results it appears as though I may telework on occasion. Ok, so that narrows down my likely place of business to two areas - one near the mall and the other in Rosslyn Virginia.</p>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+        </div>
+        <!-- /.row -->
+        
+        <div class="row">
+          <div class="span12">
+            <div class="inside">
+              <hgroup>
+                <h2>How much is my household worth?</h2>
+              </hgroup>
+<div class="mask2" id="chartContainer" style="height: 300px; width: 100%;"></div>
+              <div class="entry-content">
+                <p>Using real estate resources, I quickly looked up the average cost of apartments in the building where I reside. The mean cost of apartments is $568,800, with 95% confidence that the value of the apartment is somewhere between $526,746 and $610,819. Assuming general industry guidelines, I probably bought the property with down payment of 10%, an interest rate of 4.2%, and monthly costs that fall between 30% and 50% of my total household income. These estimates place the monthly cost of ownership between $3,108 and $3,745, and as a result, it's likely that my household brings in between $74,592 and $149,800.</p>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+<div class="row">
+          <div class="span12">
+            <div class="inside">
+              <hgroup>
+                <h2>What do my weekends look like?</h2>
+              </hgroup>
+            <div class="mask2"> <a href="img/map_images/weekends.png" rel="prettyPhoto"><img src="img/map_images/weekends.png" alt=""></a> </div>
+                <a class="more-link" href="img/map_images/weekends.png">view map</a> </div>
+              <div class="entry-content">
+                <p>It looks like I tend to chill at home for the majority of the time, however evidently I roam around from time to time.</p>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+          <div class="span12">
+            <div class="inside">
+              <hgroup>
+                <h2>Character Overview</h2>
+              </hgroup>
+            <div class="mask2"> <a href="img/map_images/polyline.png" rel="prettyPhoto"><img src="img/map_images/polyline.png" alt=""></a> </div>
+                </div>
+              <div class="entry-content">
+                <p>We've learned several things about this character. They work at a federal agency, Deloitte LLP or CEB in Arlington, and from home. They usually take the Red or Yellow/Green line to get to work, depending on if they are going to the federal agency's location or Deloitte's/CEB's. Based on where  </p>
+            </div>
+            <!-- /.inside -->
+          </div>
+          <!-- /.span4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <hr>
+    <!--******************** News Section ********************-->
+    <div id="headerwrap">
+      <header class="clearfix">
+        <h1>WHAT DOES <span>YOUR LOCATION</span> DATA <span>SAY?</span></h1>
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+<!--
+              <input type="text" name="your-email" placeholder="you@yourmail.com" class="cform-text" size="40" title="your email">
+              <input type="submit" value="Notify me" class="cform-submit">
+-->
+            </div>
+          </div>
+      </header>
+    </div>
+    <div class="scrollblock">
+      <section id="feature">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <article>
+                <p>We at the Geospatial Analytics Practice make complex relationships understandable.</p>
+              </article>
+            </div>
+            <!-- ./span12 -->
+          </div>
+          <!-- .row -->
+        </div>
+        <!-- ./container -->
+      </section>
+    </div>
+    <section id="news" class="single-page scrollblock">
+      <div class="container">
+        <a href="#" class="btn btn-large">Our Projects</a> </div>
+      <!-- /.container -->
+    </section>
+    <hr>
+    <hr>
+</hr>
+    <!-- Loading the javaScript at the end of the page -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+    
+    <!--ANALYTICS CODE-->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-29231762-1']);
+	  _gaq.push(['_setDomainName', 'dzyngiri.com']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+    </body>
+    </html>
